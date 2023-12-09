@@ -1,0 +1,23 @@
+#include "math_functions.h"
+
+double add(double a, double b) {
+    return a + b;
+}
+
+double subtract(double a, double b) {
+    return a - b;
+}
+
+double multiply(double a, double b) {
+    return a * b;
+}
+
+double divide(double a, double b) {
+    if (b != 0) {
+        return a / b;
+    }
+    else {
+        // Обработка деления на ноль (в данном случае возвращаем 0)
+        return 0.0;
+    }
+}
